@@ -141,6 +141,7 @@ function courseRender(courses) {
             }
         } else {
             courseNameContainer.classList.add('uncompleted');
+            
         };
 
         
@@ -192,10 +193,9 @@ function courseFilter(subject) {
 
 
 // Event Listeners
-allCoursesButton.addEventListener('click', courseFilter('all'));
-cseCoursesButton.addEventListener('click', courseFilter('cse'));
-wddCoursesButton.addEventListener('click', courseFilter('wdd'));
-uncompletedCoursesButton.addEventListener('click', courseFilter('uncompleted'));
+allCoursesButton.addEventListener('click', () => courseFilter('all'));
+cseCoursesButton.addEventListener('click', () => courseFilter('cse'));
+wddCoursesButton.addEventListener('click', () => courseFilter('wdd'));
+uncompletedCoursesButton.addEventListener('click', () => courseFilter('uncompleted'));
 
 courseRender(courses);
-
