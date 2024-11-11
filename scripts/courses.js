@@ -92,17 +92,24 @@ const wddCoursesButton = document.getElementById('wdd-courses-button');
 
 // Course Grid Elements Generation
 const coursesGrid = document.createElement('div');
+
 const creditsCounter = document.createElement('p');
-creditsCounter.innerHTML = 'Credits: <span id="creditQuantity"></span>';
+
+
 certificateGrid.appendChild(creditsCounter);
 certificateGrid.appendChild(coursesGrid);
 
+creditsCounter.innerHTML = 'Credits: <span id="creditQuantity"></span>';
+const creditQuantity = document.getElementById('creditQuantity');
 
 function courseRender(courses) {
 
     coursesGrid.setAttribute('style', 'display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-around; gap: 10px; padding-bottom: 10px;')
     
     creditsCounter.setAttribute('style', 'text-align: center;')
+
+    
+    let totalCredits = 0;
 
     courses.forEach(course => {
         let courseName = `${course.subject} ${course.number}`;
@@ -134,10 +141,15 @@ function courseRender(courses) {
             }
         } else {
             courseNameContainer.classList.add('uncompleted');
-        }
-    });
-}
+        };
 
+        
+        totalCredits += course.credits;
+
+    });
+
+    creditQuantity.innerText = totalCredits.toString();
+}
 
 function courseFilter(subject) {
     const wddClass = document.querySelectorAll(`.WDD`);
