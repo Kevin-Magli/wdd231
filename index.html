@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 - Web Frontend Development I - Kevin Magliocchi</title>
+    <meta name="description" content="WDD 231 Home Page">
+    <meta name="author" content="Kevin Magliocchi">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/main-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="first-row">
+            <img src="images/me.webp" alt="my profile picture">
+            <h1>WDD 231 <br> Web Frontend Development I <br> - Kevin Magliocchi - </h1>
+        </div>
+        <nav>
+            <button id="hamburger-menu">&#9776;</button>
+            <a class="nav-link active-page" href="#">Home</a>
+            <a class="nav-link" href="#">Chomber</a>
+            <a class="nav-link" href="https://github.com/Kevin-Magli">Github Profile</a>
+            <a class="nav-link" href="https://www.linkedin.com/in/kevin-magliocchi/">LinkedIn</a>
+        </nav>
+    </header>
+    <main>
+        <div class="course-work card">
+            <h2>Course Work</h2>
+            <ul>
+                <li>First Assignment</li>
+                <li>Second Assignment</li>
+                <li>Third Assignment</li>
+            </ul>
+        </div>
+        <div class="location-card card">
+            <h2>São Paulo - Brazil</h2>         
+            <div class="location-img-container">
+                <picture>
+                    <source srcset="images/sp-large.webp" media="(min-width: 1000px)">
+                    <source srcset="images/sp-medium.webp" media="(min-width: 600px)">
+                    <img src="images/sp-small.webp" alt="Orem Utah Temple" width="400" height="200">
+                </picture>
+            </div>     
+        </div>
+        <div class="course-certificate card">
+            <h2>Web and Computer Programming<br>Certificate</h2>
+            <div class="button-row">
+                <button id="all-courses-button">All</button>
+                <button id="uncompleted-courses-button">Uncompleted</button>
+                <button id="cse-courses-button">CSE</button>
+                <button id="wdd-courses-button">WDD</button>
+            </div>
+            <div class="certificate-grid">
+                <!--  This will be populated by JS  -->
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-top">
+            <p id="year">&copy; <span id="currentYear">placeholder</span></p>
+            <p class="separator">|</p>
+            <p id="author">Kevin Magliocchi</p>
+            <p class="separator">|</p>
+            <p id="location">São Paulo - Brazil</p>
+        </div>
+        <span id="diamond">♦️</span>
+        <div class="footer-bottom">
+            <p id="lastModifiedText">Last Modified: <span id="lastModified">placeholder</span></p>
+        </div>
+    </footer>
+</body>
+</html>

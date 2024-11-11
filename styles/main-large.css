@@ -1,0 +1,52 @@
+@media screen and (min-width: 1000px) {
+    #hamburger-menu {
+        display: none;
+    }
+    .nav-link {
+        display: block;
+    }
+    header nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    header nav a {
+        padding: 10px 50px;
+    }
+    header h1 {
+        font-size: 25px;
+    }
+    header .first-row {
+        justify-content: center;
+    }
+    header .first-row img, .first-row h1 {
+        margin: 10px 30px;
+    }
+    main {
+        display: grid;
+        grid-template-columns: 1fr .5fr;
+        column-gap: 30px;
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+    .course-certificate {
+        grid-area: 2 / 1 / auto / 3;
+    }
+    .card {
+        max-width: 100%;
+    }
+    .card h2 {
+        font-size: 25px;
+    }
+    .location-img-container picture img {
+        margin-top: -20px;
+    }
+    .footer-top {
+        display: flex;
+        flex-direction: row;
+    }
+    .footer-top *{
+        margin: 0 10px 10px;
+    }
+
+}
