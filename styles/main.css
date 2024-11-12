@@ -206,7 +206,7 @@ footer {
     display: none;
 }
 #diamond {
-    color: var(--red-color-carmine);
+    color: #ff0008;
     font-size: 28px;
 }
 
