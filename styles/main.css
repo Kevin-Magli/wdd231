@@ -157,9 +157,14 @@ main {
 .course-certificate h2 {
     border-radius: 10px 10px 0 0;
 }
+
 .button-row {
-    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
+
 
 .button-row button {
     font-weight: bold;
