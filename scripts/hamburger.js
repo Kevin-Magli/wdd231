@@ -18,5 +18,3 @@ function activateHamburgerMenu() {
 }
 
 hamburgerButton.addEventListener('click', activateHamburgerMenu)
-
-// Active Page!!
