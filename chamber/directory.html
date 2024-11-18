@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce - Directory Page</title>
+    <meta name="description" content="Directory Page for the Chamber of Commerce">
+    <meta author="Kevin Magliocchi">
+    <meta property="og:title" content=""/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="https://kevin-magli.github.io/wdd231/chamber/images/img.png"/>
+    <meta property="og:url" content="https://kevin-magli.github.io/wdd231/chamber/directory.html"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/directory-large.css">
+
+</head>
+<body>
+    <header>
+        <div class="first-row">
+            <div class="site-title">
+                <img src="images/chamber-logo.webp" alt="SBC COC Logo">
+                <h1>São Bernardo do Campo <br> Chamber of Commerce</h1>
+            </div>
+            <div class="header-buttons">
+                <button id="dark-mode">☾</button>
+                <button id="hamburger-menu">&#9776;</button>
+            </div>
+        </div>
+        <nav>
+            <a class="nav-link" href="home.html">Home</a>
+            <a class="nav-link active-page" href="directory.html">Directory</a>
+            <a class="nav-link" href="join.html">Join</a>
+            <a class="nav-link" href="discover.html">Discover</a>
+        </nav>
+    </header>
+    <main>
+        <div class="search-field">
+            <input type="search" name="search-members" id="search-members" placeholder="Search members...">
+            <button id="list-button">☰</button>
+            <button id="grid-button">⊞</button>
+        </div>
+        <div class="members-grid">
+            <div class="member-card">
+                <img src="images/members/member-logo.webp" alt="member-logo" class="member-logo">
+                <p class="member-name">Member name</p>
+                <p class="member-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est nisi labore ratione praesentium error non impedit, quis optio iure obcaecati vel nesciunt eum alias, architecto quod sint qui! Atque, fuga.</p>
+                <p class="member-adress">Rua dos Membros nº64, Bairro Dourado</p>
+                <p class="member-phone">(11)98765-4321</p>
+                <a href="https://memberurl.com.br" class="member-website">Website</a>
+                <p class="member-level">Gold</p>
+            </div>
+            <div class="member-card">
+                <img src="images/members/member-logo.webp" alt="member-logo" class="member-logo">
+                <p class="member-name">Member name</p>
+                <p class="member-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est nisi labore ratione praesentium error non impedit, quis optio iure obcaecati vel nesciunt eum alias, architecto quod sint qui! Atque, fuga.</p>
+                <p class="member-adress">Rua dos Membros nº64, Bairro Dourado</p>
+                <p class="member-phone">(11)98765-4321</p>
+                <a href="https://memberurl.com.br" class="member-website">Website</a>
+                <p class="member-level">Gold</p>
+            </div>
+            <div class="member-card">
+                <img src="images/members/member-logo.webp" alt="member-logo" class="member-logo">
+                <p class="member-name">Member name</p>
+                <p class="member-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est nisi labore ratione praesentium error non impedit, quis optio iure obcaecati vel nesciunt eum alias, architecto quod sint qui! Atque, fuga.</p>
+                <p class="member-adress">Rua dos Membros nº64, Bairro Dourado</p>
+                <p class="member-phone">(11)98765-4321</p>
+                <a href="https://memberurl.com.br" class="member-website">Website</a>
+                <div class="member-badge">
+                    <p class="member-level">Gold</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-top">
+            <p><b>SBC Chamber of Commerce</b></p>
+            <p>São Bernardo do Campo - São Paulo, Brazil</p>
+            <p>Email: contact@sbchamber.org</p>
+            <p>Tel: (11) 98765-4321</p>
+        </div>
+        <div class="footer-socials">
+            <img src="images/socials/youtube.png" alt="youtube logo">
+            <img src="images/socials/X.png" alt="X(twitter) logo">
+            <img src="images/socials/LinkedIn.png" alt="LinkedIn logo">
+        </div>
+        <div class="footer-bottom">
+            <p id="class"><b>WDD231 Class Chamber Project</b></p>
+            <p id="author">Kevin Magliocchi</p>
+            <p id="year">&copy; <span id="currentYear">placeholder</span> SBC Chamber of Commerce</p>
+        </div>
+        <div class="footer-lm">
+            <p id="lastModifiedText">Last Modified: <span id="lastModified">placeholder</span></p>
+        </div>
+    </footer>
+    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/chamber.js" defer></script>
+</body>
+</html>

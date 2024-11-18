@@ -1,0 +1,144 @@
+:root {
+    --color-blue: #008ad0;
+    --color-gray: #6e6f72;
+    --color-yellow: #f39224;
+    --color-green: #31aa4e;
+    --color-red: #e61a2e;
+
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --border-color: #6e6f72;
+    --shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+
+    --font-default: 'Montserrat', sans-serif;
+}
+
+body {
+    font-family: var(--font-default);
+    background-color: var(--background-color);
+    color: var(--text-color);
+
+}
+
+/* Header Style */
+
+header {
+    background-color: var(--background-color);
+    border-radius: 0 0 30px 30px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+header .first-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+header .first-row .site-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+header .first-row .header-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    margin-right: 10px;
+
+}
+header .site-title img {
+    max-width: 30%;
+    max-height: 100px;
+}
+header .site-title h1 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 25px;
+}
+header nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+}
+header nav a {
+    text-decoration: none;
+    color: var(--color-blue);
+    padding: 10px;
+    font-size: 18px;
+}
+header nav a:hover {
+    color: var(--color-green);
+}
+header nav .active-page::before {
+    content: "›";
+    padding-right: 5px;
+}
+header button {
+    margin: 5px;
+}
+
+#dark-mode {
+    display: block;
+    background-color: var(--color-blue);
+    width: 40px;
+    border-radius: 50%;
+    border: none;
+    font-size: 30px;
+    color: white;
+    margin-bottom: 10px;
+    transition: all .2s ease-in-out;
+    align-self: center;
+
+}
+#dark-mode:hover {
+    cursor: pointer;
+    background-color: var(--color-green);
+}
+
+#hamburger-menu {
+    display: block;
+    align-self: center;
+    background-color: var(--color-blue);
+    width: 40px;
+    border-radius: 50%;
+    border: none;
+    font-size: 30px;
+    color: white;
+    margin-bottom: 10px;
+    transition: all .2s ease-in-out; 
+}
+#hamburger-menu:hover {
+    cursor: pointer;
+    background-color: var(--color-green);
+}
+
+.nav-link {
+    display: none;
+}
+.nav-link.active {
+    display: block;
+}
+
+main {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* Footer Style */
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0px -5px 5px rgba(0,0,0,0.2);
+    border-radius: 30px;
+    padding-top: 20px;
+}
+.footer-top, .footer-socials, .footer-bottom, .footer-lm {
+    padding: 10px;
+    margin-left: 20px
+}
