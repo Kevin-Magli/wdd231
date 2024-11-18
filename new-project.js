@@ -38,9 +38,10 @@ while (true) {
 }
 
 while (true) {
-    projectDirectory = prompt("Project Directory Name(enter to current directory): ");
+    projectDirectory = prompt("Project Directory Name (leave empty for current directory): ");
 
-    if (fs.existsSync(`${__dirname}/${projectDirectory}`)) {
+    // Skip the check if the directory is empty
+    if (projectDirectory !== "" && fs.existsSync(`${__dirname}/${projectDirectory}`)) {
         console.log(`A directory named '${projectDirectory}' already exists. Please choose a different name.`);
     } else {
         break;
