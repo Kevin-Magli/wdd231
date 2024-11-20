@@ -101,7 +101,7 @@ header button {
 #dark-mode:hover {
     cursor: pointer;
     background-color: var(--color-green);
-    transform: scale(110%);
+    transform: scale(1.1);
 }
 
 #hamburger-menu {
@@ -119,7 +119,7 @@ header button {
 #hamburger-menu:hover {
     cursor: pointer;
     background-color: var(--color-green);
-    transform: scale(110%);
+    transform: scale(1.1);
 }
 
 .nav-link {
