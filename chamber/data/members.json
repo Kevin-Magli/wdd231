@@ -1,0 +1,65 @@
+[
+    {
+        "name" : "Obi-Wan Kenobi",
+        "description" : "Galactic Republic representative offering expertise in diplomacy, defense strategy, and interplanetary relations. Operates from Coruscant.",
+        "address" : "Coruscant, Galactic Republic",
+        "phone" : "(123) 456-1111",
+        "website" : "https://jediorder.com",
+        "image" : "images/members/obiwan.jpg",
+        "level" : 3
+    },
+    {
+        "name" : "C-3PO",
+        "description" : "A specialist in multilingual communication and protocol optimization, serving diverse industries from Tatooine.",
+        "address" : "Tatooine, Desert Planet",
+        "phone" : "(123) 456-2222",
+        "website" : "https://droidlife.com",
+        "image" : "images/members/c3po.jpg",
+        "level" : 2
+    },
+    {
+        "name" : "Chewbacca",
+        "description" : "A trusted provider of logistics and technical support solutions, with a base of operations on Kashyyyk.",
+        "address" : "Kashyyyk, Forest Planet",
+        "phone" : "(123) 456-3333",
+        "website" : "https://wookieelife.com",
+        "image" : "images/members/chewbacca.jpg",
+        "level" : 1
+    },
+    {
+        "name" : "Darth Vader",
+        "description" : "Leading the Galactic Empire in innovation and large-scale infrastructure projects, headquartered at the Death Star",
+        "address" : "Death Star, Galactic Empire",
+        "phone" : "(123) 456-7890",
+        "website" : "https://galacticempire.com",
+        "image" : "images/members/vader.jpg",
+        "level" : 3
+    },
+    {
+        "name" : "Luke Skywalker",
+        "description" : "Dedicated to eco-conscious ventures and leadership training, representing the Jedi Order from Dagobah.",
+        "address" : "Dagobah, Swampy Planet",
+        "phone" : "(123) 456-0123",
+        "website" : "https://jediorder.com",
+        "image" : "images/members/luke.jpg",
+        "level" : 2
+    },
+    {
+        "name" : "Han Solo",
+        "description" : "Spacefaring entrepreneur specializing in trade and transport, operating the Millennium Falcon as a global shipping hub.",
+        "address" : "Millennium Falcon, Space",
+        "phone" : "(123) 456-9012",
+        "website" : "https://smugglerslife.com",
+        "image" : "images/members/solo.jpg",
+        "level" : 1
+    },
+    {
+        "name" : "Leia Organa",
+        "description" : "An advocate for legislative reform and humanitarian efforts, with a focus on interplanetary governance from Coruscant.",
+        "address" : "Galactic Senate, Coruscant",
+        "phone" : "(123) 456-1111",
+        "website" : "https://galacticsenate.com",
+        "image" : "images/members/leia.jpg",
+        "level" : 3
+    }
+]

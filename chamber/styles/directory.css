@@ -1,16 +1,38 @@
 .search-field {
     text-align: center;
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
 }
 .search-field input{
     width: 350px;
     border-radius: 30px;
     border: solid 1px var(--border-color);
     padding: 5px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+.search-field input:focus {
+    outline: 2px solid #f39224; /* Yellow border color */
+    outline-offset: 2px; /* Optional: adds space between the input and the border */
 }
 .search-field button {
-    font-size: 20px;
+    font-size: 25px;
     border-radius: 50%;
+    background-color: var(--color-yellow);
+    border: none;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    color: var(--background-color);
+    transition: 0.3s ease-in-out;
+}
+.search-field button:hover {
+    background-color: #f0a857;
+    cursor: pointer;
+    transform: scale(110%);
 }
 .members-grid {
     display: flex;
@@ -25,7 +47,7 @@
     border-radius: 30px;
     box-shadow: var(--shadow);
 
-    padding: 10px;
+    padding: 20px;
     margin-bottom: 10px;
 
     display: flex;
@@ -33,4 +55,42 @@
     align-items: center;
     text-align: center;
 
+}
+.member-badge {
+    width: 100px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    margin-top: 30px;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for growth */
+}
+/* Hover effect */
+.member-badge:hover {
+    transform: scale(1.1); /* Scale to 110% */
+    border: solid 2px var(--text-color);
+}
+.member-badge p{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+.member-card .member-logo {
+    width: 200px;
+    border-radius: 10px;
+}
+.members-grid.list-view {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.member-card.list-view {
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 600px) {
+    .member-card {
+        width: 90%;
+    }
 }

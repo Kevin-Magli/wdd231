@@ -10,7 +10,10 @@
     --border-color: #6e6f72;
     --shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 
+    --nav-footer-background: #ffffff;
+
     --font-default: 'Montserrat', sans-serif;
+
 }
 
 body {
@@ -23,7 +26,7 @@ body {
 /* Header Style */
 
 header {
-    background-color: var(--background-color);
+    background-color: var(--nav-footer-background);
     border-radius: 0 0 30px 30px;
     padding-bottom: 10px;
     padding-top: 10px;
@@ -89,7 +92,7 @@ header button {
     border-radius: 50%;
     border: none;
     font-size: 30px;
-    color: white;
+    color: var(--background-color);
     margin-bottom: 10px;
     transition: all .2s ease-in-out;
     align-self: center;
@@ -98,6 +101,7 @@ header button {
 #dark-mode:hover {
     cursor: pointer;
     background-color: var(--color-green);
+    transform: scale(110%);
 }
 
 #hamburger-menu {
@@ -108,13 +112,14 @@ header button {
     border-radius: 50%;
     border: none;
     font-size: 30px;
-    color: white;
+    color: var(--background-color);
     margin-bottom: 10px;
     transition: all .2s ease-in-out; 
 }
 #hamburger-menu:hover {
     cursor: pointer;
     background-color: var(--color-green);
+    transform: scale(110%);
 }
 
 .nav-link {
@@ -133,12 +138,22 @@ main {
 footer {
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: var(--nav-footer-background);
     box-shadow: 0px -5px 5px rgba(0,0,0,0.2);
     border-radius: 30px;
     padding-top: 20px;
+    align-items: start;
 }
 .footer-top, .footer-socials, .footer-bottom, .footer-lm {
-    padding: 10px;
     margin-left: 20px
+}
+
+.footer-socials img {
+    width: 50px;
+    padding: 10px;
+    transition: 0.1s ease-in-out;
+}
+
+.footer-socials img:hover {
+    transform: scale(1.1);
 }
