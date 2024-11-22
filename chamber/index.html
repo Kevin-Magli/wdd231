@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chamber of Commerce - Directory Page</title>
-    <meta name="description" content="Directory Page for the São Bernardo do Campo Chamber of Commerce">
+    <title>São Bernardo do Campo Chamber of Commerce - Home</title>
+    <meta name="description" content="Home Page for the São Bernardo do Campo Chamber of Commerce">
     <meta name="author" content="Kevin Magliocchi"/>
     <meta property="og:title" content=""/>
     <meta property="og:type" content="website"/>
     <meta property="og:image" content="https://kevin-magli.github.io/wdd231/chamber/images/img.png"/>
-    <meta property="og:url" content="https://kevin-magli.github.io/wdd231/chamber/directory.html"/>
+    <meta property="og:url" content="https://kevin-magli.github.io/wdd231/chamber/index.html"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="styles/chamber.css">
     <link rel="stylesheet" href="styles/chamber-large.css">
-    <link rel="stylesheet" href="styles/directory.css">
-    <link rel="stylesheet" href="styles/directory-large.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/index-large.css">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
 </head>
@@ -22,10 +22,10 @@
     <header>
         <div class="first-row">
             <div class="site-title">
-                <img src="images/chamber-logo.webp" alt="SBC Chamber Of Commerce Logo">
+                <img src="images/chamber-logo.webp" alt="SBC COC Logo">
                 <div class="main-title">
                     <h1>São Bernardo do Campo <br> Chamber of Commerce</h1>
-                    <h1>Directory Page</h1>
+                    <h1>Home</h1>
                 </div>
             </div>
             <div class="header-buttons">
@@ -34,19 +34,30 @@
             </div>
         </div>
         <nav>
-            <a class="nav-link" href="index.html">Home</a>
-            <a class="nav-link active-page" href="directory.html">Directory</a>
+            <a class="nav-link active-page" href="home.html">Home</a>
+            <a class="nav-link" href="directory.html">Directory</a>
             <a class="nav-link" href="join.html">Join</a>
             <a class="nav-link" href="discover.html">Discover</a>
         </nav>
     </header>
     <main>
-        <div class="search-field">
-            <input type="search" name="search-members" id="search-members" placeholder="Search members...">
-            <button id="list-button">☰</button>
-            <button id="grid-button">⊞</button>
+        <div class="hero">
+            <img src="images/home-hero.webp" alt="Hero image for Home page">
+            <button class="keynote-button"></button>
         </div>
-        <div class="members-grid"></div>
+        <h1>Home</h1>
+        <div class="events-card card">
+            <!-- will be populated with json -->
+        </div>
+        <div class="weather-card card">
+            <!-- will be populated with weather API -->
+        </div>
+        <div class="weather-forecast-card card">
+            <!-- will also be populated with API but only the degrees for the current week(7 days from today) -->
+        </div>
+        <div class="business-spotlight-card">
+            <!-- will be populated with the members json but less info and different layout.  -->
+        </div>
     </main>
     <footer>
         <div class="footer-top">

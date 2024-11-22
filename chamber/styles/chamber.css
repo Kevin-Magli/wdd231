@@ -45,6 +45,14 @@ header .first-row .site-title {
     flex-direction: row;
     justify-content: left;
 }
+header.site-title.main-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
 header .first-row .header-buttons {
     display: flex;
     flex-direction: row;
