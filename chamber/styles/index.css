@@ -1,0 +1,36 @@
+:root {
+    --color-blue: #008ad0;
+    --color-gray: #6e6f72;
+    --color-yellow: #f39224;
+    --color-green: #31aa4e;
+    --color-red: #e61a2e;
+
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --border-color: #6e6f72;
+    --shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+
+    --nav-footer-background: #ffffff;
+
+    --font-default: 'Montserrat', sans-serif;
+
+}
+.card {
+    width: 90%;
+    max-width: 30em;
+    border: 1px solid var(--border-color);
+    border-radius: 30px;
+
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin: 20px;
+}
+.card h2 {
+    color: var(--background-color);
+    background-color: var(--border-color);
+    text-align: center;
+    position: sticky;
+    margin-top: -5px;
+    padding: 10px;
+}

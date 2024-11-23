@@ -43,20 +43,50 @@
     <main>
         <div class="hero">
             <img src="images/home-hero.webp" alt="Hero image for Home page">
-            <button class="keynote-button"></button>
+            <button class="keynote-button">Keynote Tickets</button>
         </div>
         <h1>Home</h1>
         <div class="events-card card">
             <!-- will be populated with json -->
+            <h2>Events</h2>
         </div>
         <div class="weather-card card">
             <!-- will be populated with weather API -->
+             <h2>Current Weather</h2>
+             <img src="images/icons/weather-icon.png" alt="Weather icon png">
+             <div class="weather-data">
+                <p>75º F</p>
+                <p>Party Cloudy</p>
+                <p>High: 85º</p>
+                <p>Low: 52º</p>
+                <p>Humidity: 34%</p>
+                <p>Sunrise: 7:30am</p>
+                <p>Sunset: 9:59pm</p>
+             </div>
         </div>
         <div class="weather-forecast-card card">
             <!-- will also be populated with API but only the degrees for the current week(7 days from today) -->
+             <h2>Weather Forecast</h2>
+            <p>Today: <b>90ºF</b></p>
+            <p>Saturday: <b>90ºF</b></p>
+            <p>Sunday: <b>90ºF</b></p>
+            <p>Monday: <b>90ºF</b></p>
+            <p>Tuesday: <b>90ºF</b></p>
+            <p>Wednesday: <b>90ºF</b></p>
+            <p>Thursday: <b>90ºF</b></p>
         </div>
         <div class="business-spotlight-card">
             <!-- will be populated with the members json but less info and different layout.  -->
+             <div class="spotlight-tag">
+                <h3>Business Name</h3>
+                <p>Business tag line</p>
+             </div>
+             <img src="images/member-logo.png" alt="member logo">
+             <div class="spotlight-info">
+                <p><b>Email: </b><span></span></p>
+                <p><b>Phone: </b><span></span></p>
+                <p><b>URL: </b><span></span></p>
+             </div>
         </div>
     </main>
     <footer>
@@ -81,7 +111,7 @@
             <p id="lastModifiedText">Last Modified: <span id="lastModified">placeholder</span></p>
         </div>
     </footer>
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/index.js" defer></script>
     <script src="scripts/chamber.js" defer></script>
 </body>
 </html>
