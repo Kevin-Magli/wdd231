@@ -5,7 +5,7 @@ Should display items with icon(depending on weather) and temperature.
 - So: Day, Temperature, icon.
 
 ## Hero button: 
-- Bottom left
+- Bottom right
 
 ## Large display:
 - home h1 title: left aligned

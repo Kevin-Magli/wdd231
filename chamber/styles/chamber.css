@@ -158,8 +158,8 @@ footer {
 
 .footer-socials img {
     width: 50px;
-    padding: 10px;
-    transition: 0.1s ease-in-out;
+    margin: 10px;
+    transition: 0.1s ease-in-out;  
 }
 
 .footer-socials img:hover {

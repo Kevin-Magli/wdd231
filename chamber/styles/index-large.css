@@ -1,0 +1,23 @@
+@media screen and (min-width: 1200px) {
+    main {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        flex-wrap: wrap;
+
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .hero {
+        width: 100%;
+    }
+    main h1 {
+        width: 100%;
+    }
+    .events-card {
+        width: 50%;
+    }
+    .weather-card {
+        width: 50%;
+    } 
+}
