@@ -1,0 +1,45 @@
+{
+    "coord": {
+      "lon": -46.5728,
+      "lat": -23.6827
+    },
+    "weather": [
+      {
+        "id": 803,
+        "main": "Clouds",
+        "description": "broken clouds",
+        "icon": "04n"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 17.46,
+      "feels_like": 17.43,
+      "temp_min": 17.05,
+      "temp_max": 18.98,
+      "pressure": 1019,
+      "humidity": 83,
+      "sea_level": 1019,
+      "grnd_level": 933
+    },
+    "visibility": 10000,
+    "wind": {
+      "speed": 6.69,
+      "deg": 140
+    },
+    "clouds": {
+      "all": 75
+    },
+    "dt": 1732488563,
+    "sys": {
+      "type": 2,
+      "id": 2033898,
+      "country": "BR",
+      "sunrise": 1732435878,
+      "sunset": 1732484119
+    },
+    "timezone": -10800,
+    "id": 3449344,
+    "name": "São Bernardo do Campo",
+    "cod": 200
+  }

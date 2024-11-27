@@ -29,7 +29,10 @@ main {
     position: relative;
 }
 .hero img{
-    width: 100%
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
 }
 .hero button {
     width: 150px;
@@ -73,6 +76,7 @@ main {
 }
 .weather-card img {
     margin-right: 30px;
+    box-shadow: 5px 5px 10px var(--shadow);
 }
 .weather-forecast-card {
     display: flex;
@@ -85,7 +89,7 @@ main {
 .weather-forecast-card .day {
     border: solid 1px var(--border-color);
     border-radius: 30px;
-    width: 90px;
+    width: 120px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -94,6 +98,10 @@ main {
 }
 .weather-forecast-card h2 {
     width: 100%;
+}
+
+.weather-forecast-card img {
+    box-shadow: 5px 5px 10px var(--shadow);
 }
 
 .business-spotlight-card {
@@ -122,6 +130,7 @@ main {
 
 .business-spotlight-card img {
     padding: 30px;
+    border-radius: 15px
 }
 
 .business-spotlight-card .spotlight-info {
