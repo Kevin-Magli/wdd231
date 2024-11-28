@@ -185,6 +185,29 @@ main {
 
 }
 
+.clickable {
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+.clickable:hover {
+    transform: scale(1.05);
+}
+
+#course-details-modal {
+    width: 50%;
+    border-radius: 30px;
+    padding: 20px;
+}
+#course-details-modal .title-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#course-details-modal button {
+    height: 30px;
+    width: 30px;
+}
+
 footer {
     display: flex;
     flex-direction: column;
