@@ -115,7 +115,13 @@ function courseRender(courses) {
         let courseName = `${course.subject} ${course.number}`;
         let courseNameContainer = document.createElement('div');
         let nameContainer = document.createElement('p');
-        courseNameContainer.className = `${course.subject}`;
+        courseNameContainer.classList = `${course.subject} clickable`;
+
+        courseNameContainer.addEventListener('click', () => {
+            displayModal(course)
+        })
+
+
         nameContainer.innerHTML = courseName;
         courseNameContainer.appendChild(nameContainer);
         coursesGrid.appendChild(courseNameContainer);
@@ -150,6 +156,7 @@ function courseRender(courses) {
     });
 
     creditQuantity.innerText = totalCredits.toString();
+    
 }
 
 function courseFilter(subject) {
@@ -191,11 +198,50 @@ function courseFilter(subject) {
     }
 }
 
+function displayModal(course) {
+
+    const modal = document.getElementById('course-details-modal');
+    
+    
+    const className = `${course.subject} ${course.number}`;
+    const title = course.title;
+    const credits = course.credits;
+    const certificate = course.certificate;
+    const description = course.description;
+    const techStack = course.technology;
+
+    
+    modal.innerHTML = `
+        <div class="title-bar">
+            <h2>${className}</h2>
+            <button id="modalClose">❌</button>
+        </div>
+        <div class="course-details">
+            <h3>${title}</h3>
+            <p>${credits} credits</p>
+            <p>Certificate: ${certificate}</p>
+            <p>${description}</p>
+            <p>Technology: ${techStack}</p>
+        </div>
+    `;
+
+    modal.showModal();
+
+    const modalClose = document.getElementById('modalClose');
+    modalClose.addEventListener('click', () =>{
+        modal.close();
+    })
+    
+
+
+}
 
 // Event Listeners
 allCoursesButton.addEventListener('click', () => courseFilter('all'));
 cseCoursesButton.addEventListener('click', () => courseFilter('cse'));
 wddCoursesButton.addEventListener('click', () => courseFilter('wdd'));
 uncompletedCoursesButton.addEventListener('click', () => courseFilter('uncompleted'));
+
+
 
 courseRender(courses);

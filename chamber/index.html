@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>São Bernardo do Campo Chamber of Commerce - Home</title>
     <meta name="description" content="Home Page for the São Bernardo do Campo Chamber of Commerce">
-    <meta name="author" content="Kevin Magliocchi"/>
-    <meta property="og:title" content=""/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:image" content="https://kevin-magli.github.io/wdd231/chamber/images/img.png"/>
-    <meta property="og:url" content="https://kevin-magli.github.io/wdd231/chamber/index.html"/>
+    <meta name="author" content="Kevin Magliocchi">
+    <meta property="og:title" content="São Bernardo do Campo Chamber of Commerce - Home Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://kevin-magli.github.io/wdd231/chamber/images/img.png">
+    <meta property="og:url" content="https://kevin-magli.github.io/wdd231/chamber/index.html">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="styles/chamber.css">
     <link rel="stylesheet" href="styles/chamber-large.css">
@@ -25,7 +25,6 @@
                 <img src="images/chamber-logo.webp" alt="SBC COC Logo">
                 <div class="main-title">
                     <h1>São Bernardo do Campo <br> Chamber of Commerce</h1>
-                    <h1>Home</h1>
                 </div>
             </div>
             <div class="header-buttons">
@@ -42,21 +41,25 @@
     </header>
     <main>
         <div class="hero">
-            <img src="images/home-hero.webp" alt="Hero image for Home page">
-            <button class="keynote-button"></button>
+            <img src="images/sbc-hero.webp" alt="Hero image for Home page">
+            <button class="keynote-button">Keynote Tickets</button>
         </div>
         <h1>Home</h1>
         <div class="events-card card">
             <!-- will be populated with json -->
+            <h2>Events</h2>
         </div>
         <div class="weather-card card">
             <!-- will be populated with weather API -->
+             <h2>Current Weather</h2>
         </div>
         <div class="weather-forecast-card card">
             <!-- will also be populated with API but only the degrees for the current week(7 days from today) -->
+            <h2>Weather Forecast</h2>
+            
         </div>
-        <div class="business-spotlight-card">
-            <!-- will be populated with the members json but less info and different layout.  -->
+        <div class="business-spotlight-div">
+           
         </div>
     </main>
     <footer>
@@ -81,7 +84,7 @@
             <p id="lastModifiedText">Last Modified: <span id="lastModified">placeholder</span></p>
         </div>
     </footer>
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/index.js" defer></script>
     <script src="scripts/chamber.js" defer></script>
 </body>
 </html>
