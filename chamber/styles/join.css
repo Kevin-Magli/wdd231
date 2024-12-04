@@ -1,0 +1,124 @@
+:root {
+    --color-blue: #008ad0;
+    --color-gray: #6e6f72;
+    --color-yellow: #f39224;
+    --color-green: #31aa4e;
+    --color-red: #e61a2e;
+
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --border-color: #6e6f72;
+    --shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+
+    --nav-footer-background: #ffffff;
+
+    --font-default: 'Montserrat', sans-serif;
+
+}
+#course-details-modal {
+    width: 50%;
+    border-radius: 30px;
+    padding: 20px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+#course-details-modal .title-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#course-details-modal button {
+    height: 30px;
+    width: 30px;
+    background-color: var(--background-color);
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+form div {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+form select, form textarea {
+    width: 40%;
+}
+form label, form button {
+    margin-top: 15px;
+}
+form button {
+    width: 20%;
+    color: white;
+    background-color: var(--color-blue);
+    border: solid 1px var(--border-color);
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+form button:hover {
+    background-color: var(--color-green);
+}
+
+form input, form select, form textarea {
+    border: solid 1px var(--border-color);
+    background-color: var(--background-color);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.membership-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.membership-cards div {
+    border: solid 1px var(--border-color);
+    border-radius: 30px;
+    text-align: center;
+    width: 70%;
+    margin: 10px;
+    padding: 5px;
+}
+.membership-cards div button {
+    width: 40%;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    border: solid 1px var(--border-color);
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+.membership-cards div button:hover {
+    background-color: var(--text-color);
+    color: var(--background-color);
+}
+.membership-cards h3 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+.np-membership {
+    background-image: linear-gradient(45deg, rgba(0,0,0,0), rgba(135,206,235,1));
+}
+.bronze-membership {
+    background-image: linear-gradient(45deg, #6e4b3b 20%, #b97c56 40%, #9e5b3e 60%, #c97a47 100%);
+}
+.silver-membership {
+    background-image: linear-gradient(45deg, #b6b6b6 20%, #e6e6e6 40%, #c1c1c1 60%, #dcdcdc 100%);
+}
+.gold-membership {
+    background-image: linear-gradient(45deg, #AE8625 20%, #f7ef8a 40%, #d2ac47 60%, #edc967 100%);
+}
