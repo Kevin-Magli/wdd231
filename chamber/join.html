@@ -41,45 +41,55 @@
         </nav>
     </header>
     <main>
-        <form action="/submit" method="get">
-            <!-- window.location.href will get the information contained in the completed form url -->
+        <form action="#" method="get" id="subscription-form">
             <div>
                 <label for="first-name-field">First Name:</label>
-                <input type="text" id="name-field" autocomplete="on" required>
+                <input type="text" id="first-name-field" name="first-name" autocomplete="on" required>
             </div>
             <div>
                 <label for="last-name-field">Last Name:</label>
-                <input type="text" id="name-field" autocomplete="on" required>
+                <input type="text" id="last-name-field" name="last-name" autocomplete="on" required>
             </div>
             <div>
                 <label for="org-title">Organizational Title:</label>
-                <input type="text" name="organization-title" id="org-title" title="Enter your organization title (e.g., Manager, Team Leader)" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}">
+                <input type="text" name="organization-title" id="org-title" 
+                    title="Enter your organization title (e.g., Manager, Team Leader)" 
+                    autocomplete="organization-title" pattern="[A-Za-z\s\-\.]{3,}" required>
             </div>
             <div>
                 <label for="email-field">Email:</label>
-                <input type="email" id="email-field" autocomplete="email" placeholder="john.doe@email.com" required>
+                <input type="email" id="email-field" name="email" autocomplete="email" placeholder="john.doe@email.com" required>
             </div>
             <div>
                 <label for="phone-field">Phone:</label>
-                <input type="text" name="phone-field" id="phone-field" autocomplete="phone-number" required>
+                <input type="tel" name="phone" id="phone-field" autocomplete="tel" pattern="^\+?\d{0,15}" required>
             </div>
             <div>
                 <label for="org-name">Business/Org. Name:</label>
                 <input type="text" name="org-name" id="org-name" required>
             </div>
-             <label for="member-level">Membership Level:</label>
-             <select name="member-level" id="member-level" required>
-                <option value="">--Please Select--</option>
-                <option value="Non Profit (NP)">Non Profit (NP)</option>
-                <option value="Bronze">Bronze</option>
-                <option value="Silver">Silver</option>
-                <option value="Gold">Gold</option>
-             </select>
-             <label for="org-description">Business/Org. Description:</label>
-             <textarea name="org-description" id="org-description"></textarea>
-             <input type="hidden" name="timestamp" id="timestamp">
-             <button type="submit" id="submit-button">Submit Form</button>
+            <div>
+                <label for="member-level">Membership Level:</label>
+                <select name="member-level" id="member-level" required>
+                    <option value="">--Please Select--</option>
+                    <option value="Non Profit (NP)">Non Profit (NP)</option>
+                    <option value="Bronze">Bronze</option>
+                    <option value="Silver">Silver</option>
+                    <option value="Gold">Gold</option>
+                </select>
+            </div>
+            <div>
+                <label for="org-description">Business/Org. Description:</label>
+                <textarea name="org-description" id="org-description"></textarea>
+            </div>
+            <div>
+                <label for="credit-card-info">Credit Card Information:</label>
+                <input type="text" name="credit-card-info" id="credit-card-info" placeholder="1234-5678-9012-3456" required>
+            </div>
+            <input type="hidden" name="timestamp" id="timestamp">
+            <button type="submit" id="submit-button">Subscribe</button>
         </form>
+        
         <div class="membership-cards">
             <div class="np-membership">
                 <h3>Non Profit Membership Level</h3>

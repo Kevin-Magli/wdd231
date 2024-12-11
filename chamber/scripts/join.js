@@ -46,29 +46,53 @@ function displayModal(membership) {
     
     
     modal.innerHTML = `
-        <div class="title-bar">
-            <h2>${membership.membershipName}</h2>
-            <button id="modalClose">❌</button>
-        </div>
-        <div class="membership-details">
-            <h3>Benefits:</h3>
-            <ul>
-                ${membership.benefits.map(benefit => `<li>${benefit}</li>`).join('')}
-            </ul>
-            <p>${membership.description}</p>
+        <div class="${membership.membershipName.toLowerCase().replace(/\s/g, '-')}-modal">
+            <div class="title-bar">
+                <h2>${membership.membershipName}</h2>
+                <button id="modalClose">❌</button>
+            </div>
+            <div class="membership-details">
+                <h3>Benefits:</h3>
+                <ul>
+                    ${membership.benefits.map(benefit => `<li>${benefit}</li>`).join('')}
+                </ul>
+                <p>${membership.description}</p>
+            </div>
         </div>
     `;
-
     modal.showModal();
+
+
 
     const modalClose = document.getElementById('modalClose');
     modalClose.addEventListener('click', () =>{
         modal.close();
     })
-    
-
 
 }
+
+
+
+// Attach an event listener to the form
+document.getElementById("subscription-form").addEventListener("submit", function (event) {
+    // Prevent default form submission
+    event.preventDefault();
+
+    const timestampInput = document.getElementById("timestamp");
+    timestampInput.value = new Date().toLocaleString(); // Set current date and time
+
+    // Retrieve form data
+    const formData = new FormData(event.target); // Automatically gathers input data
+    const formJson = Object.fromEntries(formData.entries()); // Converts to JSON-friendly object
+
+    // Construct the query string
+    const queryParams = new URLSearchParams(formJson).toString();
+
+    // Redirect to a thank you page
+    window.location.href = `thank-you.html?${queryParams}`;
+});
+
+
 
 const nonProfitMembership = document.getElementById('non-profit-button');
 nonProfitMembership.addEventListener('click', () => {
