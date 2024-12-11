@@ -1,4 +1,5 @@
 @media screen and (min-width: 1200px) {
+    /*Discover page on larger screens*/
     main {
         flex-direction: row;
         align-items: start;
@@ -18,5 +19,6 @@
     .feed img:hover{
         transform: scale(1.03);
     }
+
    
 }
