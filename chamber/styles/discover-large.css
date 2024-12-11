@@ -13,6 +13,7 @@
         width: 50%;
     }
     .feed img {
+        width: 50%;
         transition: transform .3s ease-in-out;
 
     }
