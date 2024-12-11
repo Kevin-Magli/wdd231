@@ -1,0 +1,84 @@
+:root {
+    --color-blue: #008ad0;
+    --color-gray: #6e6f72;
+    --color-yellow: #f39224;
+    --color-green: #31aa4e;
+    --color-red: #e61a2e;
+
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --border-color: #6e6f72;
+    --shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+
+    --nav-footer-background: #ffffff;
+
+    --font-default: 'Montserrat', sans-serif;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-blue);
+    padding: 50px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+
+}
+.sidebar .events {
+    border: solid 1px var(--border-color);
+    border-radius: 10px;
+    background-color: var(--color-yellow);
+    padding: 20px;
+    color: black;
+    margin-bottom: 30px
+}
+.sidebar .events img {
+    width: 90%;
+    border-radius: 10px;
+}
+.sidebar .calendar iframe{
+    height: 350px;
+}
+
+.post-container {
+    border: solid 1px var(--border-color);
+    border-radius: 10px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    background-color: var(--background-color);
+}
+.post-container img {
+    width: 90%;
+    border-radius: 10px;
+}
+.post-container p, .post-container h3 {
+    width: 90%;
+    color: var(--text-color);
+}
+.post-container button {
+    width: 60px;
+    height: 40px;
+    font-size: 20px;
+    margin: 0 5px;
+    background-color: var(--color-blue);
+    border: solid 1px var(--border-color);
+    border-radius: 10px;
+    transition: background-color 0.2s ease-in-out, transform 0.1s ease-in-out;
+    
+}
+.post-container button:hover {
+    background-color: var(--color-green);
+    transform: scale(1.1);
+}
