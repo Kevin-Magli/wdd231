@@ -1,0 +1,105 @@
+/* Mobile-First CSS */
+:root {
+    --primary-color: #dd2020;
+    --secondary-color: #e2e2e2;
+    --text-color: #333;
+    --background-color: #303030;
+    --color-1: #303030; /* Example color */
+    --color-2: #e2e2e2; /* Example color */
+    --color-3: #dd2020; /* Example color */
+    --color-4: #dd6c20; /* Example color */
+    --color-5: #20dd49; /* Example color */
+}
+
+body {
+    font-family: 'Exo 2', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+header {
+    background: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    padding: 1rem;
+}
+
+section {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: var(--background-color);
+    color: var(--color-2);
+    border: solid 1px var(--color-2);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: var(--backgroud-color);
+}
+h2 {
+    color: var(--primary-color);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: var(--secondary-color);
+    color: var(--backgroud-color);
+    margin-top: 2rem;
+}
+.color-box-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.color-box {
+    width: 100%;
+    height: 50px;
+    margin-top: 0.5rem;
+    border-radius: 5px;
+    border: solid 1px var(--color-2);
+}
+
+#color-1 {
+    background-color: var(--color-1);
+}
+
+#color-2 {
+    background-color: var(--color-2);
+}
+
+#color-3 {
+    background-color: var(--color-3);
+}
+#color-4 {
+    background-color: var(--color-4);
+}
+
+#color-5 {
+    background-color: var(--color-5);
+}
+
+/* Larger Screens */
+@media (min-width: 768px) {
+    main {
+        max-width: 750px;
+        margin: 0 auto;
+    }
+
+    section {
+        margin-bottom: 2rem;
+    }
+
+    header, footer {
+        padding: 2rem;
+    }
+}
