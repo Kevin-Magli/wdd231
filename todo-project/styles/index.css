@@ -94,7 +94,7 @@ nav a:hover {
     align-items: center;
     padding: 50px 30px;
     position: relative;
-    background: url(../images/red-space.jpg) no-repeat center center fixed;
+    background: url(../images/red-space.webp) no-repeat center center fixed;
     background-size: cover;
 }
 

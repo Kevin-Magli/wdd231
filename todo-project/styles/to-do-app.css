@@ -16,7 +16,7 @@
     box-sizing: border-box;
 }
 body {
-    background: url(../images/red-space.jpg);
+    background: url(../images/red-space.webp);
     /* background: var(--color-1); */
     background-size: cover;
     background-attachment: fixed;
