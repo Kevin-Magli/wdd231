@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/index-large.css">
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/about-large.css">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.png" alt="website-logo">
+            <h3>Magli's To-Do List</h3>
+        </div>
+        <button id="hamburger-menu">&#9776;</button>
+        <nav>
+            <div class="nav-link">
+                <a href="index.html">Home</a>
+                <a href="to-do-app.html">To-Do App</a>
+                <a href="about.html" class="active-page">About</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="hero-section">
+            <div class="hero">
+            <div class="hero-text">
+                <h1>About</h1>
+                <p>The Magli's in the name of the app is my Last name <i>"Magliocchi"</i>. This is the first of many applications created to compose my personal all-in-one website. I always find the To-do apps to be "too much" and it made me get distracted by their million functionalities (or even be disappointed when i don't have the specific feature i wanted). So if you're disappointed with something, just do it yourself!</p>
+            </div>
+            </div>
+            <div class="hero">
+                <div class="hero-text">
+                    <h1>Why the app</h1>
+                    <p>This app and website are being made for the Final Project of my WDD 231 Byu Course. The idea was having an app with useful functionalities that i could even use in my personal life if i wanted to. Pretty neat stuff!</p>
+                    <p>The sad part is that there we're too many ideas for too little time (i'm even late lol) but i wish this meets the requirements. I plan on expanding the functionalities of this app (and more in the future) to be part of a big All-in-One personal website.</p>
+                    <p>If you want to contribute, share your ideas! I'll gladly listen to them and every good idea will make it into this app.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-section">
+            <div class="about-text">
+                <h2>Got any suggestions?</h2>
+                <p>Fill the form below so we can know more about your idea. It may even reach the final product! We are eager to hear you, so don't waste it!!</p>
+            </div>
+            <form action="#" method="get" id="subscription-form">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" required>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+                <label for="message">Message:</label>
+                <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        <div class="attributions">
+            <h2>Attributions</h2>
+            <ul>
+               <li><a href="https://www.youtube.com/watch?v=G0jO8kUrg-I&pp=ygUUamF2YXNjcmlwdCB0b2RvIGxpc3Q%3D">Inspiration for the App design</a></li>
+               <li><a href="https://unsplash.com/photos/red-and-black-galaxy-with-stars-RTtv7aT97dg">Space Background</a></li>
+               <li><a href="https://www.flaticon.com/">Icons</a></li>
+            </ul>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/R6MlHxB54FU?" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-top">
+                <p id="year">&copy; <span id="currentYear">placeholder</span>  &#8901;  No rights reserved. </p>
+                <p id="author">Kevin Magliocchi</p>
+            </div>
+            <div class="footer-bottom">
+                <p id="lastModifiedText">Last Modified: <span id="lastModified">placeholder</span></p>
+            </div>
+        </footer>
+    </main>
+    <script src="../scripts/getdates.js" defer></script>
+    <script src="../scripts/hamburger.js" defer></script>
+    <script src="../scripts/form.js" defer></script>
+
+</body>
+</html>

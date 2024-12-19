@@ -1,0 +1,111 @@
+:root {
+    --primary-color: #dd2020;
+    --secondary-color: #e2e2e2;
+    --text-color: #e2e2e2;
+    --background-color: #303030b0;
+    --color-1: #303030; /* Example color */
+    --color-2: #e2e2e2; /* Example color */
+    --color-3: #dd2020; /* Example color */
+    --color-4: #dd6c20; /* Example color */
+    --color-5: #20dd49; /* Example color */
+}
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    position: relative;
+    background: url(../images/red-space.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.hero-text {
+    text-align: center;
+    position: relative;
+    z-index: 3;
+}
+.hero img {
+    display: none;
+    z-index: 3;
+
+}
+.about-section {
+    width: 90%;
+}
+.about-text {
+    width: 90%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--color-2);
+    padding: 30px;
+    border-radius: 30px;
+    width: 90%;
+}
+form div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+form select, form textarea {
+    width: 90%;
+}
+form label, form button {
+    margin-top: 15px;
+}
+form button {
+    width: 50%;
+    color: white;
+    background-color: var(--primary-color);
+    border: solid 1px var(--color-2);
+    border-radius: 30px;
+    padding: 5px 15px;
+    margin: 30px 0;
+    cursor: pointer;
+    transition: background-color transform 0.3s ease-in-out;
+}
+form button:hover {
+    background-color: #e24b4b;
+    transform: scale(1.1);
+}
+form input, form select, form textarea {
+    border: solid 1px var(--color-2);
+    background-color: var(--background-color);
+    border-radius: 10px;
+    padding: 5px;
+    color: var(--color-2);
+    width: 90%;
+}
+.attributions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.attributions a {
+    text-decoration: none;
+    color: var(--color-2);
+    margin-top: 5px;
+}
+.attributions a:hover {
+    text-decoration: underline;
+}
+.video {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: solid 1px var(--color-2);
+    border-radius: 30px;
+}
+iframe {
+    width: 360px;
+    height: 215px;
+    border-radius: 30px;
+}
+

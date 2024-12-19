@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/index-large.css">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.png" alt="website-logo">
+            <h3>Magli's To-Do List</h3>
+        </div>
+        <button id="hamburger-menu">&#9776;</button>
+        <nav>
+            <div class="nav-link">
+                <a href="index.html" class="active-page">Home</a>
+                <a href="to-do-app.html">To-Do App</a>
+                <a href="about.html">About</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+          <div class="hero-text">
+            <h1>Meet the only To-do List you'll ever need</h1>
+            <p>Join us in crafting the ultimate To-Do List experience!</p>
+          </div>
+          <div class="hero-image">
+            <img src="images/app-img.png" alt="visual representation of the app">
+          </div>
+        </div>
+        <div class="feature-section">
+            <div class="feature-card">
+                <img src="images/feature1.png" alt="feature 1 image">
+                <div class="feature-text">
+                    <h2>Create your tasks quickly</h2>
+                    <p>Either pressing enter or clicking the "Add" button, create as many tasks as you like and edit their descriptions afterwards. <i>Create the tasks while they're fresh, bother about them later.</i></p>
+                </div>
+            </div>
+            <div class="feature-card">
+                <img src="images/feature2.png" alt="feature 2 image">
+                <div class="feature-text">
+                    <h2>Complete many tasks with one press of a button</h2>
+                    <p>Sometimes we complete tasks in bulk. Thes "complete all" and "delete all" buttons allows you to mark all tasks complete and then clean your list, to give space to your next missions.</p>
+                </div>
+            </div>
+            <div class="feature-card">
+                <img src="images/feature3.png" alt="feature 3 image">
+                <div class="feature-text">
+                    <h2>Examples for the indecisive</h2>
+                    <p>If you are a indecisive person we got you covered! We separated 15 "mock" tasks so you can see how they look and plan your own tasks. We hold your hand so you can mindlessly complete the tasks your procrastination habits disturb!</p>
+                </div>
+            </div>
+        </div>
+        <div class="about-section">
+            <div class="about-text">
+                <h2>A simple to-do list, to simply <i>get work done.</i></h2>
+                <p>This app is designed to give you the space you need to accomplish your goals <i>(literally)</i>. Experiment it for yourself and always remember: if there is something you're missing, go to the about page and let us know!</p>
+            </div>
+            <img src="images/aboutimg.png" alt="about image">
+            <a href="to-do-app.html"><button id="go-to-app">Go to App</button></a>
+        </div>
+        <footer>
+            <div class="footer-top">
+                <p id="year">&copy; <span id="currentYear">placeholder</span>  &#8901;  No rights reserved. </p>
+                <p id="author">Kevin Magliocchi</p>
+            </div>
+            <div class="footer-bottom">
+                <p id="lastModifiedText">Last Modified: <span id="lastModified">placeholder</span></p>
+            </div>
+        </footer>
+    </main>
+    <script src="../scripts/getdates.js" defer></script>
+    <script src="../scripts/hamburger.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+@media screen and (max-width: 1000px) {
+    #hamburger-menu {
+        display: block;
+    }
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 5px;
+        background-color: var(--primary-color);
+        border-radius: 0 0 30px 30px;
+        color: var(--color-2);
+    }
+    
+    .logo-container {
+        display: flex;
+        flex-direction: row;
+    }
+    .logo-container img {
+        width: 62px;
+        margin: 0 15px;
+    }
+    nav {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        align-items: center;
+        margin-right: 15px;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    nav a {
+        text-decoration: none;
+        color: var(--color-2);
+        font-size: 18px;
+        font-weight: 600;
+    }
+    nav a:hover {
+        text-decoration: underline;
+        color: var(--color-2);
+    }
+    .nav-link {
+        display: none;
+        padding: 10px;
+        justify-content: space-evenly;
+    }
+    .nav-link.active {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .active-page {
+        text-decoration: underline;
+    }
+    #hamburger-menu {
+        background-color: var(--color-1);
+        color: var(--color-2);
+        border: solid 1px var(--color-2);
+        border-radius: 50%;
+        font-size: 30px;
+        width: 40px;
+        height: 40px;
+        transition: ease-in-out .1s;
+        cursor: pointer;
+        text-align: center;
+        top: 0;
+        right: 0;
+        margin: 10px;
+    }
+    #hamburger-menu:hover {
+        transform: scale(1.05);
+        background-color: var(--color-2);
+        color: var(--color-1);
+    }
+    
+    .todo-app {
+        width: 90%;
+    }
+    .button-row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+    #delete-completed {
+        margin-top: 20px;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        margin-top: -50px;
+        background-color: var(--primary-color);
+        border-radius: 30px 30px 0 0;
+        padding: 15px;
+    }
+    footer p {
+        margin: 5px;
+    }
+    .footer-top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 0;
+    }
+    .footer-bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}

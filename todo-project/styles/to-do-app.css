@@ -15,15 +15,69 @@
     font-family: "Exo 2";
     box-sizing: border-box;
 }
-
+body {
+    background: url(../images/red-space.jpg);
+    /* background: var(--color-1); */
+    background-size: cover;
+    background-attachment: fixed;
+}
 main {
     width: 100%;
     min-height: 100vh;
-    /* background: url(../images/red-space.jpg); */
-    background: var(--color-1);
-    background-size: cover;
-    background-attachment: fixed;
+
+}
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 15px;
+    background-color: var(--primary-color);
+    border-radius: 0 0 30px 30px;
+    margin: 0;
+    color: var(--color-2);
+}
+.logo-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.logo-container img {
+    width: 30px;
+    margin: 0 50px;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+    margin-right: 15px;
+    width: 40%;
+    justify-content: space-around;
+}
+nav a {
+    text-decoration: none;
+    color: var(--color-2);
+    font-size: 18px;
+    font-weight: 600;
+}
+nav a:hover {
+    text-decoration: underline;
+    color: var(--color-2);
+}
+.nav-link {
+    display: flex;
     padding: 10px;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.active-page {
+    text-decoration: underline;
+}
+#hamburger-menu {
+    display: none;
 }
 
 .todo-app {
@@ -33,7 +87,7 @@ main {
     backdrop-filter: blur(1px);
     border: solid 1px var(--color-2);
     border-radius: 10px;
-    margin: 100px auto 20px;
+    margin: 50px auto 20px;
     padding: 40px 30px 70px;
 }
 .todo-app h2 {
@@ -41,10 +95,6 @@ main {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
-}
-.todo-app h2 img{
-    width: 30px;
-    margin-left: 10px;
 }
 .row {
     display: flex;
@@ -127,4 +177,154 @@ ul li.checked::before {
 .x-button:hover {
     color: var(--primary-color);
     border-radius: 50%;
+}
+
+.edit-button {
+    position: absolute;
+    right: 0;
+    margin-right: 30px;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+    color: var(--color-2);
+    line-height: 40px;
+    text-align: center;
+}
+.edit-button:hover {
+    color: var(--primary-color);
+    border-radius: 50%;
+}
+
+.button-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#mark-completed {
+    border: none;
+    outline: none;
+    padding: 16px 40px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+    transition: ease-in-out .1s;
+    margin-top: 50px;
+}
+#mark-completed:hover {
+    background-color: #ec4040;
+    transform: scale(1.05);
+}
+#delete-completed {
+    border: none;
+    outline: none;
+    padding: 16px 40px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+    transition: ease-in-out .1s;
+    margin-top: 50px;
+}
+#delete-completed:hover {
+    background-color: #ec4040;
+    transform: scale(1.05);
+}
+#add-default-tasks {
+    border: none;
+    outline: none;
+    padding: 16px 40px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+    transition: ease-in-out .1s;
+    margin-top: 20px;
+}
+#add-default-tasks:hover {
+    background-color: #ec4040;
+    transform: scale(1.05);
+}
+
+#myModal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    border-radius: 30px;
+    padding: 20px;
+    background-color: var(--color-1);
+    color: var(--text-color);
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+#myModal .title-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+#modalClose {
+    height: 30px;
+    width: 30px;
+    background-color: var(--color-1);
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    transition: ease-in-out .1s;
+}
+#modalClose:hover {
+    transform: scale(1.05);
+}
+#modalSave {
+    color: var(--color-2);
+    background: var(--primary-color);
+    border: none;
+    border-radius: 40px;
+    padding: 16px 50px;
+    margin-top: 15px;
+    transition: ease-in-out .1s;
+}
+#modalSave:hover {
+    background-color: #ec4040;
+    transform: scale(1.05);
+}
+.task-description {
+    display: none;
+}
+.task-details textarea {
+    background: transparent;
+    color: var(--color-2);
+    border-radius: 40px;
+    padding: 15px;
+    border: solid 1px var(--color-2);
+    margin-top: 10px;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    border-radius: 30px 30px 0 0;
+    padding: 15px;
+
+}
+.footer-top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 50px;
+}
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 15px;
 }

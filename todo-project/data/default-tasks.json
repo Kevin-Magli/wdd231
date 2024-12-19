@@ -1,0 +1,62 @@
+[
+    {
+        "title": "Learn HTML",
+        "description": "Learn the basics of HTML structure and elements."
+    },
+    {
+        "title": "Learn CSS",
+        "description": "Learn the basics of CSS selectors and properties."
+    },
+    {
+        "title": "Learn JavaScript",
+        "description": "Learn the basics of JavaScript syntax and functions."
+    },
+    {
+        "title": "Learn React",
+        "description": "Learn the basics of React components and state."
+    },
+    {
+        "title": "Learn Node.js",
+        "description": "Learn the basics of Node.js modules and asynchronous programming."
+    },
+    {
+        "title": "Learn MongoDB",
+        "description": "Learn the basics of MongoDB documents and queries."
+    },
+    {
+        "title": "Learn Express",
+        "description": "Learn the basics of Express routes and middleware."
+    },
+    {
+        "title": "Learn React Native",
+        "description": "Learn the basics of React Native components and navigation."
+    },
+    {
+        "title": "Learn PHP",
+        "description": "Learn the basics of PHP syntax and functions."
+    },
+    {
+        "title": "Learn Laravel",
+        "description": "Learn the basics of Laravel routes and controllers."
+    },
+    {
+        "title": "Learn Vue.js",
+        "description": "Learn the basics of Vue.js components and lifecycle."
+    },
+    {
+        "title": "Learn Angular",
+        "description": "Learn the basics of Angular components and dependency injection."
+    },
+    {
+        "title": "Learn Python",
+        "description": "Learn the basics of Python syntax and functions."
+    },
+    {
+        "title": "Learn Django",
+        "description": "Learn the basics of Django models and views."
+    },
+    {
+        "title": "Learn Ruby",
+        "description": "Learn the basics of Ruby syntax and functions."
+    }
+]
