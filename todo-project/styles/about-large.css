@@ -60,6 +60,9 @@
         align-items: center;
         justify-content: center;
     }
+    .attributions p {
+        width: 70%;
+    }
     form {
         width: 50%;
     }
