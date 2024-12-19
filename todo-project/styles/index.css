@@ -92,6 +92,7 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding: 50px 30px;
     position: relative;
     background: url(../images/red-space.webp) no-repeat center center fixed;
